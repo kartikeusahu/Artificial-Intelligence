@@ -2,29 +2,29 @@ from doctest import Example
 
 import pandas as pd
 
-# Example 1
+# # Example 1
 # print("Pandas version:", pd.__version__)
 
-# Example 2
+# # Example 2
 # data = {'Name': ['Alice', 'Bob', 'Charlie'],
 #         'Age': [25, 30, 35],
 #         'City': ['New York', 'Los Angeles', 'Chicago']}
 # df = pd.DataFrame(data)
 # print(df)
 
-# Example 3
+# # Example 3
 
 # nums = [1, 2, 3, 4, 5]
 # res = pd.Series(nums)
 # print(res)
 
-# Example 4
+# # Example 4
 
 # data = ["Alice", "Bob", "Charlie"]
 # res = pd.Series(data, index=['a', 'b', 'c'])
 # print(res)
 
-# Example 5
+# # Example 5
 
 df = pd.read_csv("employees.csv")
 # print(df)
@@ -49,5 +49,8 @@ df = pd.read_csv("employees.csv")
 
 # print (df.groupby("Class")["Age"].mean())  # Display the average age for each class
 
-print(df.sort_values("Age"))  # Display the DataFrame sorted by the "Age" column in ascending order
-print(df.sort_values("Age", ascending=False))  # Display the DataFrame sorted by the
+# print(df.sort_values("Age"))  # Display the DataFrame sorted by the "Age" column in ascending order
+# print(df.sort_values("Age", ascending=False))  # Display the DataFrame sorted by the
+
+# print(df.ffill())  # Forward fill missing values in the DataFrame
+# print(df.bfill())  # Backward fill missing values in the DataFrame
