@@ -54,7 +54,7 @@ import pandas as pd
 # Example 4 
 
 
-x = ["Chanchal", "KitKat", "Manya", "Parvati", "Kartik"]
+x = ["Sneha", "KitKat", "Manya", "Parvati", "Kartik"]
 y1 = [85, 90, 78, 92, 88]
 
 bars = plt.bar(
